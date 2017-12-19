@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171218084444) do
+ActiveRecord::Schema.define(version: 20171219100518) do
 
 # Could not dump table "products" because of following StandardError
-#   Unknown type 'sting' for column 'price'
+#   Unknown type '' for column 'price'
 
 end
