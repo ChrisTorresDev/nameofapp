@@ -20,7 +20,14 @@ ActiveRecord::Schema.define(version: 20171221084832) do
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
-# Could not dump table "products" because of following StandardError
-#   Unknown type '' for column 'price'
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "colour"
+    t.integer "price"
+  end
 
 end
