@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+  <%= render partial: 'shared/form', locals: { product : product } %>
+
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name, id: :product_name %>
