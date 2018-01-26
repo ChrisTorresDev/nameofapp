@@ -36,9 +36,9 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/products">Products<span class="sr-only">(current)</span></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><%= link_to 'Products', products_path %></li>
+            <li><%= link_to 'About', simple_pages_about_path %></li>
+            <li><%= link_to 'Contact', simple_pages_contact_path %></li>
           </ul>
           <form class="navbar-form navbar-right">
             <div class="form-group">
@@ -62,13 +62,13 @@
 
       <div class="footer-left">
         <p class="footer-links">
-          <a href="/">Home</a>
+          <a><%= link_to 'Home', simple_pages_index_path %></a>
           ·
-          <a href="/products">Porducts</a>
+          <a><%= link_to 'Products', products_path %></a>
           ·
-          <a href="#">About</a>
+          <a><%= link_to 'About', simple_pages_about_path %></a>
           ·
-          <a href="#">Contact</a>
+          <a><%= link_to 'Contact', simple_pages_contact_path %></a>
         </p>
         <p>gearDventure &copy;<%= Date.today.year %></p>
       </div>
