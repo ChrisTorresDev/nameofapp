@@ -40,6 +40,15 @@
             <li><%= link_to 'About', simple_pages_about_path %></li>
             <li><%= link_to 'Contact', simple_pages_contact_path %></li>
           </ul>
+          <ul class="nav pull-right">
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
+          </ul>
           <form class="navbar-form navbar-right">
             <div class="form-group">
               <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
@@ -52,6 +61,9 @@
         </div>
       </div>
   	</nav>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
     <%= yield %>
 
