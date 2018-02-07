@@ -36,10 +36,34 @@ h1 {
 	font-family: sans-serif;
 }
 
+/* Carousel */
+
+#caption-box {
+	box-sizing: border-box;
+	font-size: 20px;
+	background-color: #285582;
+}
+
+h2 {
+	text-align: center;
+}
+
+.carousel-caption {
+	padding-bottom: 40px;
+}
+
 .carousel-inner>.item>img {
 	margin: auto;
 	width: 100%;
 	height: 650px;
+}
+
+/* Rating */
+
+h4 {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /* Footer */
@@ -60,6 +84,7 @@ h1 {
 	color:  #8f9296;
 	font-size: 14px;
 	margin: 0;
+	display: inline-block;
 }
 
 /* Footer links */
@@ -77,6 +102,10 @@ h1 {
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+}
+
+.footer-distributed p.footer-links a:hover {
+	color:  #6cdbfd;
 }
 
 .footer-distributed .footer-right {
@@ -100,6 +129,22 @@ h1 {
 	margin-left: 3px;
 }
 
+.footer-distributed .footer-right .fa-facebook:hover {
+	color: #3B5998;
+}
+
+.footer-distributed .footer-right .fa-twitter:hover {
+	color: #00aced;
+}
+
+.footer-distributed .footer-right .fa-linkedin:hover {
+	color: #007bb6;
+}
+
+.footer-distributed .footer-right .fa-github:hover {
+	color: #c9510c;
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 600px) {
@@ -114,19 +159,7 @@ h1 {
 		margin: 0 auto 20px;
 	}
 
-	.footer-distributed .footer-left p.footer-links { 
+	.footer-distributed .footer-left p.footer-links {
 		line-height: 1.8;
 	}
-}
-
-/* Carousel */
-
-#caption-box {
-	box-sizing: border-box;
-	font-size: 20px;
-	background-color: #285582;
-}
-
-h2 {
-	text-align: center;
 }

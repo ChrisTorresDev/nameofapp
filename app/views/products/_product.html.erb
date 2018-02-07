@@ -1,5 +1,5 @@
-
-<div class="col-lg-4 col-sm-6" id="product-col">
+<div class="col-lg-4" id="product-col">
+	<!-- <h4><%= link_to product.name, product %></h4> -->
 	<%= image_tag(product.image_url, class: "img-responsive") unless product.image_url.blank? %>
 	<p><%= product.name %></p>
 	<p><%= product.description %></p>
