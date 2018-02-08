@@ -1,7 +1,5 @@
-<div class="container">
   <p id="notice"><%= notice %></p>
 
-  <div class="row">
     <p>
       <%= image_tag(@product.image_url, class: "img-responsive") %>
     </p>
@@ -23,7 +21,7 @@
 
     <p>
     	<strong>Price:</strong>
-    	<%= @product.price %>
+    	<%= number_to_currency(@product.price) %>
     </p>
 
     <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
@@ -34,9 +32,7 @@
 
     <%= will_paginate @comments %>
 
-  </div>
 
-</div>
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
