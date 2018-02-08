@@ -31,6 +31,8 @@ Rails.application.configure do
   config.assets.compile = true
   config.assets.digest = true
 
+  config.serve_statis_assets = true
+
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
@@ -90,5 +92,3 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
-
-config.serve_statis_assets = true
