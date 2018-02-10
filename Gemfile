@@ -48,16 +48,29 @@ gem 'cancancan', '~> 1.10'
 
 gem 'ratyrate'
 
+gem 'rails-controller-testing'
+
 # Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.1'
 
 group :development, :test do
+
   gem 'rspec-rails', '~>3.7'
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem 'factory_bot_rails'
+
+end
+
+group :test do
+  gem 'faker'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'launchy'
 end
 
 group :development do
