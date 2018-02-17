@@ -7,4 +7,4 @@
   data-amount="<%= @product.price*100 %>">
 </script>
 
-<imput id="payment" name=":product_id" type="hidden" value="@product.id" />
+<%= hidden_field_tag :product_id, :@product.id %>
