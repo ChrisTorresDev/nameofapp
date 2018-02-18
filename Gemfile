@@ -55,6 +55,8 @@ gem 'will_paginate', '~> 3.1.1'
 
 gem 'stripe'
 
+gem "brakeman", :require => false
+
 group :development, :test do
 
   gem 'rspec-rails', '~>3.7'
