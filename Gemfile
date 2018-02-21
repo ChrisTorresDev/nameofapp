@@ -57,6 +57,8 @@ gem 'stripe'
 
 gem "brakeman", :require => false
 
+gem 'dalli'
+
 group :development, :test do
 
   gem 'rspec-rails', '~>3.7'
