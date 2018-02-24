@@ -59,6 +59,8 @@ gem "brakeman", :require => false
 
 gem 'dalli'
 
+gem 'redis-rails'
+
 group :development, :test do
 
   gem 'rspec-rails', '~>3.7'
